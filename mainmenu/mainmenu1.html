@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>Интерфейс клиента</title>
+	<style type="text/css">
+		#layer1 
+		{
+			width: 500px;
+			background: #FFFFF0;
+			text-align: center;
+			border-radius: 15px;
+			padding: 30px;
+			opacity: 0.8
+		}
+		.deepshadow 
+		{
+			font-size: 25px;
+			color: #0A122A;
+			background-color: #6E6E6E;
+			letter-spacing: .5em;
+			text-shadow: 
+				0 -1px 0 #6E6E6E, 
+				0 1px 0 #6E6E6E, 
+				0 2px 0 #6E6E6E, 
+				0 3px 0 #6E6E6E, 
+				0 4px 0 #6E6E6E, 
+				0 5px 0 #6E6E6E, 
+				0 6px 0 #6E6E6E, 
+				0 7px 0 #6E6E6E, 
+				0 8px 0 #6E6E6E,       
+				0 4px 0 #6E6E6E, 
+				0 5px 0 #6E6E6E, 
+				0 6px 0 #6E6E6E, 
+				0 7px 0 #6E6E6E,       
+				0 7px 30px rgba(0, 0, 0, 0.9);
+		}
+		body 
+		{
+			margin: 0;
+			padding: 0;
+			background-image: url(../images/color.jpg);
+			background-size: cover;
+		}
+   </style>
+	</head>
+	
+	<center>
+	<body>
+
+		<table border="0">
+		<tr height="20%">
+			<td colspan="2" width="850"><center>
+				<div id="layer1" class="deepshadow"><b><h1>БауманЛайн</h1></b></div>
+			</center></td>
+		</tr>
+		<tr height="430">
+			<td width="200">
+				<iframe src="menu1.html" frameborder="0" scrolling="no" width="200" height="410" marginheight="10" noresize></iframe>
+			</td>
+			<td width="650">
+				<iframe src="main1.php" name="osnovnoe" frameborder="0" scrolling="auto" width="650" height="410" marginheight="5" noresize></iframe>
+			</td>
+		</tr>
+		</table>
+	</body>
+	</center>
+</html>

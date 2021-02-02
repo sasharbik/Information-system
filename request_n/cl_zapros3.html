@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Ввод данных для клиентского запроса 3</title>
+		<style type="text/css">
+			#layer1 
+			{
+				width: 560px;
+				height: 380px;
+				background: #FFFFF0;
+				border-radius: 15px;
+				padding: 10px;
+				opacity: 0.7;
+			}
+			.button
+			{
+				cursor:	pointer;
+				background: #FFA07A;
+				border: 1px solid #C0C0C0;
+				border-radius: 5px;
+				text-align: center;
+				height: 50px;
+				width: 200px;
+				bottom: 30px;
+			}
+			.button:hover {background: #FF4500;}
+			.headline
+			{
+				text-align: center;
+				font-size: 30px;
+				font-weight: bold;
+			}
+			label
+			{
+				display: inline-block;
+				width: 150px;
+				text-align: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="layer1">
+			<center>
+				<p class="headline"> Чтобы увидеть подключенные услуги одного из Ваших абонентов,<br> 
+						введите необходимый мобильный номер. 
+				</p><br>
+				<form action="?send" method=post>
+					<label>Мобильный номер</label>
+						<input type=text name=num> <br><br>
+					<div>
+						<input class="button" type=submit value=Отправить name=send>
+						<base target="_top">
+					</div>	
+				</form>
+			</center>
+		</div>
+		
+	</body>
+</html>

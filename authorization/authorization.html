@@ -1,0 +1,119 @@
+<?php
+header("Content-Type: text/html;charset=UTF-8");
+?>
+<html>
+	<head> 
+		<title>Авторизация</title> 
+		<link rel="stylesheet" type="text/css" href="authorization.css">
+		<style>
+	.button
+	{
+		cursor:	pointer;
+		background: #FFA07A;
+		border: 1px solid #C0C0C0;
+		border-radius: 5px;
+		padding: 6px 24px;
+		text-align: center;
+	}
+	.button:hover {background: #FF4500;}
+	
+	#window
+	{
+		background: white;
+		width: 400px;
+		height: 250px;
+		top: 10%;
+		left: 35%;
+		border-radius: 15px;
+		display: none;
+		z-index: 2;
+		position: absolute;
+	}
+	
+	.close
+	{
+		margin: 10px 0 0 370px;
+		cursor: pointer;
+		border-radius: 15px;
+		padding: 2px;
+		border: 1px solid #C0C0C0;
+		background: #C0C0C0;
+	}
+	
+	input
+	{
+		width: 200px;
+		height: 30px;
+		padding: 5px;		
+	}
+	
+	.close:hover {background: #FF4500;}
+	
+	#gray
+	{
+		background-color: rgba(1,1,1,0.9);
+		position: fixed;
+		left: 0; right: 0; top: 0; bottom: 0; 
+		z-index: 1;
+		display: none;
+	}
+		
+	</style>
+	</head>
+	<body>
+	<div class="smoke">
+		<span>B</span>
+		<span>A</span>
+		<span>U</span>
+		<span>M</span>
+		<span>A</span>
+		<span>N</span>
+		<span>L</span>
+		<span>I</span>
+		<span>N</span>
+		<span>E</span>
+	</div>
+	</div>
+	
+	<div class="container" id="elem" onclick="show('block')"> 
+		<div class="chevron"></div> 
+		<div class="chevron"></div> 
+		<div class="chevron"></div>
+	</div>
+	
+	<div id="gray" onclick="show('none')"></div>
+	<div id="window">		
+		<img class="close" src="../images/close.png" onclick="show('none')">
+			<br><br>
+			<div align=center font-size: 20px>Для продолжения работы необходима авторизация.</div><br>
+			<form  align=center action="?" method="post">
+		
+				<input type=text placeholder="Login" name=pname> <br><br>
+		
+				<input type=password placeholder="Password" name=ppas> <br><br>
+			
+				<input class="button" type=submit value=Отправить name=send> 
+			</form>
+	</div>
+		
+	<!--<script>
+		function() 
+		{	var button1=document.getElementById('elem');
+			button1.click=function()
+			{
+				var authorization1=document.getElementById('window');
+				var authorization2=document.getElementById('gray');
+				authorization1.style.display='block';
+				authorization2.style.display='block';
+			};
+		}
+	</script>-->
+	<script>
+		function show(state) 
+		{	
+				document.getElementById('window').style.display=state;
+				document.getElementById('gray').style.display=state;
+		}
+	</script>
+	</body>
+</html>

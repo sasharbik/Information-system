@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Клиентские запросы</title>
+		<style type="text/css">
+			#layer1 {
+			width: 560px;
+			height: 380px;
+			background: #FFFFF0;
+			text-align: center;
+			border-radius: 15px;
+			padding: 10px;
+			opacity: 0.7;
+			}
+			.button
+			{
+				cursor:	pointer;
+				background: #FFA07A;
+				border: 1px solid #C0C0C0;
+				border-radius: 5px;
+				text-align: center;
+				height: 50px;
+				width: 200px;
+				position: absolute;
+				left: 35%;
+			}
+			.button:hover {background: #FF4500;}
+   </style>
+	</head>
+	<body>
+		<font face="times new roman">
+		<center>
+			<div id="layer1"><br>
+				<a href="?req1" target="_top">1. Показать количество подключенных услуг
+												для всех абонентов клиента по форме:<br>
+											Мобильный номер, количество активных услуг.</a><br><br>
+				<a href="?req2" target="_top">2. Показать текущий баланс каждого из абонентов клиента.</a><br><br>
+				<a href="?req3" target="osnovnoe">3. Показать активные услуги абонента XXX клиента.</a><br><br>
+				<div>
+					<form  align=center action="" method="post">
+						<input class="button" type=submit value='Выйти из системы' name=out>
+						
+					</form>
+				</div>
+			</div>
+		</center>
+		</font>
+	</body>
+</html>	

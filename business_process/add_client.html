@@ -1,0 +1,62 @@
+<?php
+	session_start();
+?>
+<html>
+	<head>
+		<title> Новый клиент </title>
+		<style>
+			.button
+			{
+				cursor:	pointer;
+				background: #FFA07A;
+				border: 1px solid #C0C0C0;
+				border-radius: 5px;
+				text-align: center;
+				height: 50px;
+				width: 200px;
+			}
+			.button:hover {background: #FF4500;}
+			.headline
+			{
+				text-align: center;
+				font-size: 30px;
+				font-weight: bold;
+			}
+			label
+			{
+				display: inline-block;
+				width: 300px;
+				text-align: left;
+			}
+			#input1
+			{
+				display: inline-block;
+				width: 300px;
+				text-align: left;
+			}
+		</style>
+	</head>
+
+<body style="background: #FFFFF0;">
+	<center>
+		<p class="headline"> Введите необходимые данные </p><br><br>
+		<form  action="?" method=post>
+		<div>
+			<label>Фамилия</label>
+				<input id="input1" type=text name=edit_surname> <br><br>
+			<label>Дата рождения</label>
+				<input id="input1" type=date name=edit_birthday> <br><br>
+			<label>Профессия</label>
+				<input id="input1" type=text name=edit_profession> <br><br>
+			<label>Дата заключения договора</label>
+				<input id="input1" type=date name=edit_entdate> <br><br>
+			<label>Дата расторжения договора</label>
+				<input id="input1" type=date name=edit_brdate> <br><br>
+		</div>
+		<div>
+			<input type=submit class="button" value=Отправить name=send> 
+		</div>
+		</form>
+	</center>
+</body>
+</html>

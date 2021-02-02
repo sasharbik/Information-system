@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Все запросы</title>
+		<style type="text/css">
+			#layer1 {
+			width: 560px;
+			height: 380px;
+			background: #FFFFF0;
+			text-align: center;
+			border-radius: 15px;
+			padding: 10px;
+			opacity: 0.7;
+			}
+			.button
+			{
+				cursor:	pointer;
+				background: #FFA07A;
+				border: 1px solid #C0C0C0;
+				border-radius: 5px;
+				text-align: center;
+				height: 50px;
+				width: 200px;
+				position: absolute;
+				left: 35%;
+			}
+			.button:hover {background: #FF4500;}
+   </style>
+	</head>
+	<body>
+		<font face="times new roman">
+		<center>
+			<div id="layer1"><br>
+				<a href="?req1" target="osnovnoe">1. Составить отчет о подключении услуг  в XXX месяце XXX года по форме:<br>
+					Номер услуги, Название услуги , количество подключений за месяц.</a><br><br>
+				<a href="?req2" target="_top">2. Показать все сведения о самом молодом клиенте компании.</a><br><br>
+				<a href="?req3" target="osnovnoe">3. Показать, какую прибыль принесла компании каждая из услуг,<br>
+													подключенных в XXX месяце XXX года.</a><br><br>
+				<a href="?req4" target="_top">4. Показать названия услуг, которые пока не включались ни у одного абонента.</a><br><br>
+				<a href="?req5" target="osnovnoe">5. Показать номера абонентов, которые не подключали услуг в XXX месяце XXX года.</a><br>
+				<div>
+					<form  align=center action="" method="post">
+						<input class="button" type=submit value='Выйти из системы' name=out>
+						<base target="_top">
+					</form>
+				</div>
+			</div>
+		</center>
+		</font>
+	</body>
+</html>	

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Красивый заголовок</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="zagolovok1.css">
+    </head>
+    <body>
+        <ul class="fly-in-text hidden">
+            <li>Bauman</li>
+            <li>L</li>
+            <li>i</li>
+            <li>n</li>
+            <li>e</li>
+        </ul>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                setTimeout(function() {
+                    $('.fly-in-text').removeClass('hidden');
+                }, 500);
+                
+            })();
+            
+        </script>
+
+    </body>
+</html>
